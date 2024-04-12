@@ -876,7 +876,7 @@ header .search-box label:hover {
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
-        width: 88%;
+        width: 83.6%;
     }
     
 }
@@ -1173,27 +1173,95 @@ footer {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem 4rem;
-    padding-left: 6rem;
-    align-items: center;
-    align-content: center;
-    margin: 0;
+    padding: 1rem;
     justify-content: center;
-    width: 100%;
 }
 
 .card {
     position: relative;
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     height: min-content;
-    padding: 25px;
+    padding: 20px;
     background: #ffffff;
     border: 2px solid #e1e3e6;
     border-radius: 20px;
     transition: .4s;
     margin: 1rem;
-    
 }
+
+.card-header p{
+    overflow: hidden;
+    height: 120px;
+}
+
+.beb{
+    height: 60px;
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        padding: 15px;
+        margin: 0.5rem;
+        margin-bottom: 40px;
+    }
+
+    .card .card-header h3 {
+        font-size: 24px;
+    }
+
+    .card .card-header p {
+        font-size: 18px;
+    }
+
+    .card .card-header span {
+        font-size: 16px;
+        right: 15px;
+        top: 15px;
+        padding: 3px 8px;
+        border-radius: 10px;
+    }
+
+    .card .card-img {
+        height: 180px;
+        margin: 15px 0;
+    }
+
+    .card .card-details .price p {
+        font-size: 18px;
+    }
+
+    .card .card-details .price strong {
+        font-size: 20px;
+    }
+
+    .card .card-details .colors div {
+        width: 30px;
+        height: 30px;
+    }
+
+    .card .card-details .colors div i {
+        font-size: 20px;
+    }
+
+    .card .card-sizes span {
+        padding: 4px 10px;
+    }
+
+    .card-footer button {
+        padding: .7rem;
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    .card-footer button i {
+        left: 8px;
+        right: 80px;
+        font-size: 16px;
+       
+    }
+}
+
 
 
 
@@ -1618,4 +1686,71 @@ footer {
   }
   
   
-  
+  @media (max-width: 480px) {
+    .order-form {
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+    
+    .order-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .order-form input,
+    .order-form select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      outline: none;
+    }
+    
+    .order-form button {
+      padding: 8px 20px;
+      background-color: var(--main-color);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .order-form button:hover {
+      background-color: #c77735;
+    }
+    
+    .order-form input:focus::placeholder {
+      color: #c5c5c5; 
+      transition: color 0.9s ease; 
+    }
+    
+    .order-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    
+    .order-form input:focus {
+      border-color: var(--main-color); 
+      box-shadow: 0 0 5px rgba(255, 102, 0, 0.5); 
+    }
+    
+    .order-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    
+    .order-form select:focus {
+      border-color: var(--main-color); 
+      box-shadow: 0 0 5px rgba(255, 102, 0, 0.5); 
+    }
+  }

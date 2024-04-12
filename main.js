@@ -71,14 +71,17 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
     const nombre = form.querySelector('#nombre').value;
     const cantidad = form.querySelector('#cantidad').value;
-    const direccion = form.querySelector('#direccion').value;
-    const precio = form.getAttribute('data-price');
+    const conjunto = form.querySelector('#conjunto').value;
+    const torreApto = form.querySelector('#torre').value;
     const metodoPago = form.querySelector('#metodo-pago').value;
+    const precio = form.getAttribute('data-price');
     const productName = form.getAttribute('data-product');
 
-    const text = `Hola Buenas, Me gustaría realizar el siguiente pedido\nNombre: ${nombre}\nProducto: ${productName}\nPrecio: ${precio}\nCantidad: ${cantidad}\nDirección: ${direccion}\nMétodo de Pago: ${metodoPago}`;
+    const text = `Hola Buenas, Me gustaría realizar el siguiente pedido\nNombre: ${nombre}\nProducto: ${productName}\nPrecio: ${precio}\nCantidad: ${cantidad}\nConjunto: ${conjunto}\nTorre y apartamento: ${torreApto}\nMétodo de Pago: ${metodoPago}`;
     const number = '+57 3114186250';
-    const url = `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(text)}&source=+57 3114186250`;    window.open(url, '_blank');
+    const url = `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(text)}&source=+57 3114186250`;
+
+    window.open(url, '_blank');
 
     form.style.display = 'none';
 });
