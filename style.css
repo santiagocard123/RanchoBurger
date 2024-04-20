@@ -1294,7 +1294,7 @@ footer {
 
 .card .card-img {
     position: relative;
-    height: 220px;
+    height: 400px;
     border-radius: 12px;
     margin: 22px 0;
     overflow: hidden;
@@ -1492,7 +1492,7 @@ footer {
     }
 
     .card .card-img {
-        height: 180px;
+        height: 400px;
         margin: 15px 0;
     }
 
