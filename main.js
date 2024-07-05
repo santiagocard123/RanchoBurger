@@ -78,8 +78,8 @@ form.addEventListener('submit', function(event) {
     const productName = form.getAttribute('data-product');
 
     const text = `Hola Buenas, Me gustaría realizar el siguiente pedido\nNombre: ${nombre}\nProducto: ${productName}\nPrecio: ${precio}\nCantidad: ${cantidad}\nConjunto: ${conjunto}\nTorre y apartamento: ${torreApto}\nMétodo de Pago: ${metodoPago}`;
-    const number = '+57 3114186250';
-    const url = `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(text)}&source=+57 3114186250`;
+    const number = '+57 3243719750';
+    const url = `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(text)}&source=+57 3243719750`;
 
     window.open(url, '_blank');
 
